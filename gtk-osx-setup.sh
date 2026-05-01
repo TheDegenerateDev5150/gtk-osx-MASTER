@@ -58,7 +58,7 @@ envvardir PYENV_INSTALL_ROOT "$DEV_SRC_ROOT/pyenv"
 envvardir PYENV_ROOT "$DEVPREFIX/share/pyenv"
 envvardir PIP_CONFIG_DIR "$HOME/.config/pip"
 if test -z $PYTHON_VERSION; then
-    export PYTHON_VERSION=3.13.2
+    export PYTHON_VERSION=3.14.4
 fi
 
 export PYTHONWARNINGS=ignore:DEPRECATION::pip._internal.cli.base_command
@@ -90,7 +90,7 @@ if test ! -x /usr/bin/groff -a ! -x "$DEVPREFIX/bin/groff"; then
 fi
 
 # Setup pyenv
-PYENV_RELEASE_VERSION=v2.6.6
+PYENV_RELEASE_VERSION=v2.6.27
 if test ! -x "$PYENV_INSTALL_ROOT/libexec/pyenv"; then
   if test -d "$PYENV_INSTALL_ROOT"; then
      rm -rf "$PYENV_INSTALL_ROOT";
